@@ -18,7 +18,7 @@
     <WarningLevel>4</WarningLevel>
     <Externalconsole>true</Externalconsole>
     <PlatformTarget>x86</PlatformTarget>
-    <Commandlineparameters>~/Documents/3D\ Modeling/illuminati_pyramid.gcode</Commandlineparameters>
+    <Commandlineparameters>offset X=10 Y=10 ~/Desktop/列印服務/workspace/output/target-02.gcode</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
@@ -37,4 +37,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="parameters.cfg" />
+  </ItemGroup>
 </Project>
